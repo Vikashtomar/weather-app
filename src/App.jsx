@@ -17,7 +17,6 @@ function getData(){
     return axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=1a4e51c7377e8cf939cbc51bb433a57f" )
     .then((result) =>{
         
-
         console.log(result.data)
                setCountry(result.data.sys.country)  
                setHumidity("Humidity:  " + result.data.main.humidity) 
